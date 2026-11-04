@@ -10,8 +10,7 @@ services:
     image: anupriyathavasiraj/backend:1.0
     container_name: backend
     environment:
-    PORT: 5001
-    MONGO_URI: mongodb://mongo:27017/backenddb
-
+     PORT: 5001
+     MONGO_URI: mongodb://mongo:27017/backenddb
     depends_on:
       - mongodb
