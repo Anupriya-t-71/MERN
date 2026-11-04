@@ -16,3 +16,12 @@ services:
       MONGO_URI: mongodb://mongo:27017/backenddb
     depends_on:
       - mongodb
+
+  frontend:
+    image: anupriyathavasiraj/frontend:1.0
+    container_name: frontend
+    ports:
+      - "5002:5002"
+
+
+      
