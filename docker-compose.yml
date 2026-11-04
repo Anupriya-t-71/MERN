@@ -9,8 +9,10 @@ services:
   backend:
     image: anupriyathavasiraj/backend:1.0
     container_name: backend
+    ports:
+      - "5001:5001"
     environment:
-     PORT: 5001
-     MONGO_URI: mongodb://mongo:27017/backenddb
+      PORT: 5001
+      MONGO_URI: mongodb://mongo:27017/backenddb
     depends_on:
       - mongodb
